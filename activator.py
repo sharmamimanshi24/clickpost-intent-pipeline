@@ -9,13 +9,7 @@ INPUT:  scored_accounts.csv (output of score.py)
         + the original research CSV (for the raw signal text/detail)
 OUTPUT: outreach_top5.csv - one row per brand with both messages
 
-Design choice: no LLM call here. This is plain Python string templating.
-Why: the point of Layer 4 is to prove a clear, traceable line from
-"signal we found" -> "message we sent." A template that inserts the exact
-researched sentence is more traceable and reproducible than an LLM
-paraphrasing it - and avoids needing an API key for a prototype this size.
-A natural "next step with more time" is swapping this for an LLM call that
-varies tone/structure while keeping the same grounding rule.
+
 """
 
 import csv
