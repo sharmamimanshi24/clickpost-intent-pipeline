@@ -10,11 +10,7 @@ INPUT:  a CSV with the research columns Mimi filled in by hand, plus the
 OUTPUT: a ranked list, printed to console + saved as scored_accounts.csv,
         with one human-readable explanation sentence per brand.
 
-Design choice: this script has ZERO LLM calls. Scoring is pure Python
-using a fixed rubric (see RUBRIC below). This is intentional - it means
-the score is 100% reproducible and auditable. The judgment calls (what
-counts as "moderate" vs "strong") were made by Mimi while researching,
-not guessed by a model here.
+
 """
 
 import csv
