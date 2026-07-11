@@ -83,6 +83,18 @@ This runs `score.py` then `activator.py` and produces:
 
 ---
 
+## Example Output
+
+**Scored account (SDR view):**
+
+![Ranked scoring output](scoring_output.png)
+
+**Generated outreach message:**
+
+![Sample outreach message](outreach_output.png)
+
+---
+
 ## Design choices worth noting
 
 - **Scoring is 100% deterministic** — the same tier codes always produce the same score. AI is only ever used to help classify raw text into those codes, or to rewrite explanation/outreach wording — never to decide the actual point values.
