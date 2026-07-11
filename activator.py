@@ -95,7 +95,7 @@ def call_ollama(system_prompt, user_prompt):
         method="POST",
     )
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=60) as resp:
             data = json.loads(resp.read().decode("utf-8"))
             return data["message"]["content"].strip()
     except Exception as e:
