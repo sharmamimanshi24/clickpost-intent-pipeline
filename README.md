@@ -72,6 +72,8 @@ This runs `score.py` then `activator.py` and produces:
 - `scored_accounts.csv` — all 25 brands, ranked, with intent level, recommended action, top reasons, and evidence sources
 - `outreach_top5.csv` — LinkedIn message + email for the top 5 accounts
 
+**Note:** if `USE_LLM_EXPLANATIONS=true` is set, the first Ollama call can take a minute or more while the model loads into memory — this is normal, just let it finish. Sample outputs from an actual run are already included in `scored_accounts.csv` and `outreach_top5.csv`, so you don't need to re-run anything to see the results.
+
 ---
 
 ## Notes on the data
