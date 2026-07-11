@@ -85,13 +85,7 @@ This runs `score.py` then `activator.py` and produces:
 
 ## Example Output
 
-**Scored account (SDR view):**
-
 ![Ranked scoring output](scoring_output.png)
-
-**Generated outreach message:**
-
-![Sample outreach message](outreach_output.png)
 
 ---
 
